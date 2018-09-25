@@ -12,7 +12,11 @@ public class StringUtils {
             Ex: firstName = "Sea", lastName = "Flannery"
                     --> res = "SFlannery"
          */
-        String res = firstName.substring(0,1) + lastName;
+        int f = 7;
+        if(lastName.length() < 7){
+            f = lastName.length();
+        }
+        String res = firstName.substring(0,1) + lastName.substring(0,f);
         /* Shorten the string to 8 characters
             Ex: res = "SFlannery"
                     --> res = "SFlanner"
