@@ -9,7 +9,7 @@ public class StringUtils {
      */
     public static String makePurdueUsername(String firstName, String lastName) {
         /* Generate the long version of the name first:
-            Ex: firstName = "Sean", lastName = "Flannery"
+            Ex: firstName = "Sea", lastName = "Flannery"
                     --> res = "SFlannery"
          */
         String res = firstName.substring(0,1) + lastName;
@@ -26,7 +26,6 @@ public class StringUtils {
         /* return the result of our calculation */
         return res;
     }
-
     /**
      * replaceStudentUsername -- replace student usernames in sensitive text
      * We want to make sure student information is expunged from sensitive
